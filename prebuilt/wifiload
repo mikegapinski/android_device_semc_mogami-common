@@ -14,5 +14,6 @@ fi
 
 /system/bin/insmod /system/lib/modules/wl12xx.ko
 /system/bin/insmod /system/lib/modules/wl12xx_sdio.ko
+/system/bin/wpa_supplicant -B -Dnl80211 -iwlan0 -c/etc/wifi/wpa_supplicant.conf
 /system/bin/iw phy phy0 wowlan enable any
 
