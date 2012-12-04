@@ -5,8 +5,6 @@ on early-boot
     exec /sbin/sh /system/etc/pre_hw_config.sh
     #offline charging
     exec /system/bin/chargemon
-    # Boot into recovery
-    exec /sbin/bootrec
 
 on post-fs-data
     mkdir /data/misc/wifi 0770 wifi wifi
